@@ -43,7 +43,7 @@ class _HomePageState extends State<HomePage> {
             return Column(
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
-                CurrentWeather(Icons.wb_sunny_rounded, "${data!.temp}k", "${data!.cityName}"),
+                CurrentWeather(Icons.wb_sunny_rounded, "${data.temp}k", "${data.cityName}"),
                 SizedBox(
                   height: 60,
                 ),
@@ -56,7 +56,7 @@ class _HomePageState extends State<HomePage> {
                 SizedBox(
                   height: 20,
                 ),
-                aditionalinfo("${data!.wind}","${data!.humidity}","${data!.pressure}","${data!.feels_like}"),
+                aditionalinfo("${data.wind}","${data.humidity}","${data.pressure}","${data.feels_like}"),
               ],
             );
           }
