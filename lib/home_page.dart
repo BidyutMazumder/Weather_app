@@ -21,8 +21,6 @@ class _HomePageState extends State<HomePage> {
     data = await client.getCurrentdata("Dhaka");
   }
 
-
-
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,

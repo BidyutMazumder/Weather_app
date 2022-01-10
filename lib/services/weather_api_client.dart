@@ -8,7 +8,7 @@ class WeatherApiClient{
     var endpoint = Uri.parse("https://api.openweathermap.org/data/2.5/weather?q=$location&appid=6b3079630fe19fa55fff58fb4df2bc69");
   var response = await http.get(endpoint);
   var body = jsonDecode(response.body);
-  //print(Weather.fromJson(body));
+  //print(response.body);
   return Weather.fromJson(body);
 
   }
